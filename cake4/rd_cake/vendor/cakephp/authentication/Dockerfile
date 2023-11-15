@@ -1,8 +1,7 @@
 # Basic docker based environment
 # Necessary to trick dokku into building the documentation
 # using dockerfile instead of herokuish
-FROM ubuntu:17.04
-
+FROM ubuntu:latest
 # Add basic tools
 RUN apt-get update && \
   apt-get install -y build-essential \
